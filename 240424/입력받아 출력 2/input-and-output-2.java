@@ -6,9 +6,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         sc.useDelimiter("-");
 
-        String s1 = sc.next();
-        String s2 = sc.next();
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
 
-        System.out.print(s1 + s2);
+        System.out.print((10000000 * num1) + num2);
     }
 }
