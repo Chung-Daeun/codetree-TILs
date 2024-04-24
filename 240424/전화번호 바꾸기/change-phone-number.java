@@ -6,10 +6,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         sc.useDelimiter("-");
 
-        String temp = sc.next();
-        String x = sc.next();
-        String y = sc.next();
+        int trash = sc.nextInt();
+        int x = sc.nextInt();
+        int y = sc.nextInt();
 
-        System.out.printf("%s-%s-%s", temp, y, x);
+        System.out.print("010-" + y + "-" + x);
     }
 }
