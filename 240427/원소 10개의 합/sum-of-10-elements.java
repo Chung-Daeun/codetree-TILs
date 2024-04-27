@@ -5,14 +5,14 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
 
-        int num, sum;
-        sum = 0;
+       int[] arr = new int[10];
+       int sum = 0;
 
-        for(int i = 0; i < 10; i++){
-            num = sc.nextInt();
-            sum += num;
-        }
-        System.out.println(sum);
+       for(int i = 0; i < 10; i++){
+        arr[i] = sc.nextInt();
+        sum += arr[i];
+       }
 
+       System.out.println(sum);
     }
 }
