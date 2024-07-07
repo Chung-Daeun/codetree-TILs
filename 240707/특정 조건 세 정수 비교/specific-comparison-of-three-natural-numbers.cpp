@@ -7,7 +7,7 @@ int main() {
 
     int min = (a < b)?
                 (a < c)?
-                    a : b
+                    a : c
                  :
                 (b < c)?
                     b : c;
