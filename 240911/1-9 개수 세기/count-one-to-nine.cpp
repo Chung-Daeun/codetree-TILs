@@ -5,15 +5,15 @@ int main() {
     int n;
     cin >> n;
 
-    int arr[n] = {0,};
+    int arr[9] = { 0, };
     int num;
     for(int i = 0; i < n; i++){
         cin >> num;
-        arr[num]++;
+        arr[num - 1]++;
     }
 
     for(int i = 0; i < 9; i++){
-        cout << arr[num] << endl;
+        cout << arr[i] << endl;
     }
     return 0;
 }
