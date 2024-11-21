@@ -11,7 +11,7 @@ int main() {
         cin >> gender[i];
     }
 
-    if((age[0] >= 19 && gender[0] == 'M') || (age[1] >= 19 && gender[0] == 'M')){
+    if((age[0] >= 19 && gender[0] == 'M') || (age[1] >= 19 && gender[1] == 'M')){
         cout << 1;
     } else {
         cout << 0;
