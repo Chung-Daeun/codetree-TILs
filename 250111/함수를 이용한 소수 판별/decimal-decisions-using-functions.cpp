@@ -5,7 +5,7 @@ using namespace std;
 int a, b;
 
 bool prime(int n) {
-    for (int i = 2; i <= static_cast<int>(sqrt(n)); i++){
+    for (int i = 2; i <= static_cast<int>(sqrt(n)) + 1; i++){
         if (n % i == 0) {
             return false;
         }
