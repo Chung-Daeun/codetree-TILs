@@ -5,17 +5,16 @@ using namespace std;
 int a, b;
 
 bool ThreeClap(int n) {
-    switch(n / 10) {
-        case 3: case 6: case 9:
-            return true;
+    for (int i = n; i > 0; i /= 10) {
+        switch(i % 10) {
+            case 3: case 6: case 9:
+                return true;
+            default:
+                continue;
+        }
     }
 
-    switch(n % 10) {
-        case 3: case 6: case 9:
-            return true;
-        default:
-            return false;
-    }
+    return false;
 }
 
 bool ThreeNum(int n) {
