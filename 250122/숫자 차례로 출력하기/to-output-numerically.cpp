@@ -4,7 +4,7 @@ using namespace std;
 
 int N;
 
-int func1(int n) {
+void func1(int n) {
     if (n == 0) {
         return;
     }
@@ -13,7 +13,7 @@ int func1(int n) {
     cout << n << " ";
 }
 
-int func2(int n) {
+void func2(int n) {
     if (n == 0) {
         return;
     }
@@ -29,6 +29,6 @@ int main() {
     func1(N);
     cout << endl;
     func2(N);
-    
+
     return 0;
 }
