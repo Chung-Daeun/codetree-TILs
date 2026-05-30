@@ -30,7 +30,7 @@ public class Main {
             for (int c = 0; c < n; c++) {
                 int gold = calcGold(r, c, k);
 
-                if (gold * m > k * k + (k+1) * (k+1)) {
+                if (gold * m >= k * k + (k+1) * (k+1)) {
                     maxGold = Math.max(maxGold, gold);
                 }
             }
