@@ -41,7 +41,7 @@ public class Main {
         int ans = 0;
         for (int i = -k; i <= k; i++) {
             int nr = r + i;
-            for (int j = -k + i; j <= k - i; j++) {
+            for (int j = -k + Math.abs(i); j <= k - Math.abs(i); j++) {
                 int nc = c + j;
 
                 if (nr < 0 || nr >= n || nc < 0 || nc >= n) continue;
