@@ -12,7 +12,7 @@ public class Main {
         int y1 = Integer.parseInt(st.nextToken());
         int x2 = Integer.parseInt(st.nextToken());
         int y2 = Integer.parseInt(st.nextToken());
-        checkArea(x1, y1, x2, y2);
+        checkArea(x1+100, y1+100, x2+100, y2+100);
     }
 
     static void checkArea(int x1, int y1, int x2, int y2) {
