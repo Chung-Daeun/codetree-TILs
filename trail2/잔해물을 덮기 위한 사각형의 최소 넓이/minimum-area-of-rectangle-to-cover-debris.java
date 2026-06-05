@@ -37,6 +37,9 @@ public class Main {
             }
         }
 
-        System.out.print((x2 - x1 + 1) * (y2 - y1 + 1));
+        int ans = (x2 - x1 + 1) * (y2 - y1 + 1);
+        if (x2 == -1 && x1 == 2005 && y2 == -1 && y1 = 2005)    ans = 0;
+
+        System.out.print(ans);
     }
 }
