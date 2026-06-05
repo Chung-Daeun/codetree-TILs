@@ -21,6 +21,6 @@ public class Main {
         }
         br.close();
 
-        System.out.print(maxCnt);
+        System.out.print(maxCnt == 1 ? 0 : maxCnt);
     }
 }
