@@ -19,6 +19,7 @@ public class Main {
 
             prev = curr;
         }
+        maxCnt = Math.max(cnt, maxCnt);
         br.close();
 
         System.out.print(maxCnt == 1 ? 0 : maxCnt);
