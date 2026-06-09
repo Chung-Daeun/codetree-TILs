@@ -57,7 +57,7 @@ public class Main {
     static int pro() {
         int ans = -2;
         for (int i = 0; i < A.size(); i++) {
-            if (A.get(i) == B.get(i)) {
+            if (A.get(i).intValue() == B.get(i).intValue()) {
                 ans = i;
                 break;
             }
