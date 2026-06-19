@@ -68,12 +68,11 @@ public class Main {
                 if (people[sh.x] != -1 && people[sh.y] != -1) {
                     if (people[sh.x] != 0) {
                         people[sh.x]--;
-                        continue;
                     }
                     if (people[sh.y] != 0) {
                         people[sh.y]--;
-                        continue;
                     }
+                    continue;
                 }
                 
             }
