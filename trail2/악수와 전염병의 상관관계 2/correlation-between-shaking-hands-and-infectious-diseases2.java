@@ -49,7 +49,7 @@ public class Main {
 
     static void pro() {
         for (Shake sh : arr) {
-            if (K == 0) continue;
+            if (K == 0) break;
             if (people[sh.x] == 1 || people[sh.y] == 1) {
                 people[sh.x] = 1;
                 people[sh.y] = 1;
