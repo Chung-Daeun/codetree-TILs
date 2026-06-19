@@ -31,8 +31,11 @@ public class Main {
         T = Integer.parseInt(st.nextToken());
 
         people = new int[N + 5];
+        for (int i = 1; i <= N; i++) {
+            people[i] = -1;
+        }
         arr = new Shake[T];
-        people[P] = 1;
+        people[P] = K;
 
         for (int i = 0; i < T; i++) {
             st = new StringTokenizer(br.readLine());
@@ -49,11 +52,30 @@ public class Main {
 
     static void pro() {
         for (Shake sh : arr) {
-            if (K == 0) break;
-            if (people[sh.x] == 1 || people[sh.y] == 1) {
-                people[sh.x] = 1;
-                people[sh.y] = 1;
-                K--;
+            if (people[sh.x] != -1 || people[sh.y] != -1) {
+                if (people[sh.x] == -1 && people[sh.y] != 0) {
+                    people[sh.x] = K;
+                    people[sh.y]--;
+                    continue;
+                }
+
+                if (people[sh.y] == -1 && people[sh.x] != 0) {
+                    people[sh.y] = K;
+                    people[sh.x]--;
+                    continue;
+                }
+
+                if (people[sh.x] != -1 && people[sh.y] != -1) {
+                    if (people[sh.x] != 0) {
+                        people[sh.x]--;
+                        continue;
+                    }
+                    if (people[sh.y] != 0) {
+                        people[sh.y]--;
+                        continue;
+                    }
+                }
+                
             }
         }
     }
@@ -61,7 +83,11 @@ public class Main {
     static void printAns() {
         StringBuilder sb = new StringBuilder();
         for (int i = 1; i <= N; i++) {
-            sb.append(people[i]);
+            if (people[i] == -1) {
+                sb.append(0);
+            } else {
+                sb.append(1);
+            }
         }
         System.out.print(sb.toString());
     }
