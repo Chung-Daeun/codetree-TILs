@@ -45,7 +45,7 @@ public class Main {
         char whoFirst = 'C';
 
         for (int idx = 0; idx < a.size(); idx++) {
-            if (a.get(idx) == b.get(idx)) {
+            if (a.get(idx).intValue() == b.get(idx).intValue()) {
                 if (whoFirst != 'C') {
                     ans++;
                     whoFirst = 'C';
@@ -53,7 +53,7 @@ public class Main {
                 continue;
             }
 
-            if (a.get(idx) > b.get(idx)) {
+            if (a.get(idx).intValue() > b.get(idx).intValue()) {
                 if (whoFirst != 'A') {
                     ans++;
                     whoFirst = 'A';
@@ -61,7 +61,7 @@ public class Main {
                 continue;
             }
 
-            if (a.get(idx) < b.get(idx)) {
+            if (a.get(idx).intValue() < b.get(idx).intValue()) {
                 if (whoFirst != 'B') {
                     ans++;
                     whoFirst = 'B';
