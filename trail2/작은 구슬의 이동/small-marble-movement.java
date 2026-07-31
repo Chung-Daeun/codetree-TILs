@@ -35,13 +35,14 @@ public class Main {
     }
 
     static void pro() {
-        r += dir[d][0];
-        c += dir[d][1];
+        int nr = r + dir[d][0];
+        int nc = c + dir[d][1];
 
-        if (r < 1 || c < 1 || r > n || c > n) {
+        if (nr < 1 || nc < 1 || nr > n || nc > n) {
             d = 3 - d;
-            r += dir[d][0];
-            c += dir[d][1];
+        } else {
+            r = nr;
+            c = nc;
         }
     }
 
