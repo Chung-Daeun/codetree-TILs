@@ -21,7 +21,7 @@ public class Main {
 
                         for (int i = r + 1; i < R - 1; i++) {
                             for (int j = c + 1; j < C - 1; j++) {
-                                if (grid[i][j] == 'W')  cnt++;
+                                if (grid[i][j] == 'W' && grid[R - 1][C - 1] == 'B')  cnt++;
                             }
 
                         }
@@ -38,7 +38,7 @@ public class Main {
 
                         for (int i = r + 1; i < R - 1; i++) {
                             for (int j = c + 1; j < C - 1; j++) {
-                                if (grid[i][j] == 'B')  cnt++;
+                                if (grid[i][j] == 'B' && grid[R - 1][C - 1] == 'W')  cnt++;
                             }
 
                         }
