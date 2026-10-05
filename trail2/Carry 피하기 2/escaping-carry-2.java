@@ -15,7 +15,7 @@ public class Main {
                     int a = arr[i], b = arr[j], c = arr[k];
                     boolean isCarry = false;
 
-                    while (a / 10 > 0 || b / 10 > 0 || c / 10 > 0) {
+                    while (a / 10 >= 0 || b / 10 >= 0 || c / 10 >= 0) {
                         if ((a % 10) + (b % 10) + (c % 10) >= 10) {
                             isCarry = true;
                             break;
