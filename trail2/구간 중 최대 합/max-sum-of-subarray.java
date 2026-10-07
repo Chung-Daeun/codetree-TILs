@@ -9,7 +9,7 @@ public class Main {
             arr[i] = sc.nextInt();
         // Please write your code here.
         int maxSum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n - k + 1; i++) {
             int sum = 0;
             for (int j = 0; j < k; j++) {
                 if (i + k >= n) break;
