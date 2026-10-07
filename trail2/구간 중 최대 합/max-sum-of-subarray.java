@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i < n - k + 1; i++) {
             int sum = 0;
             for (int j = 0; j < k; j++) {
-                if (i + k >= n) break;
+                if (i + j >= n) break;
 
                 sum += arr[i + j];
             }
