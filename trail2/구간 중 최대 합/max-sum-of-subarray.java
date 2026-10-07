@@ -8,7 +8,7 @@ public class Main {
         for (int i = 0; i < n; i++)
             arr[i] = sc.nextInt();
         // Please write your code here.
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < n - k + 1; i++) {
             int sum = 0;
             for (int j = 0; j < k; j++) {
